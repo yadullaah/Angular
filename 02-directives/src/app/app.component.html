@@ -1,0 +1,59 @@
+<!-- structural directives -->
+ <!-- ngIf -->
+<!-- 
+<div  *ngIf = "display">
+  <p>First Div</p>
+</div> -->
+
+<!-- <ng-container *ngIf ="display"; then IfBlock; else elseBlock"></ng-container> -->
+
+<!-- structural directives -->
+ <!-- ngFor -->
+<!-- 
+ <h3>List of Students</h3>
+ <ul>
+  <li *ngFor="let student of students; index as i">{{i+1}}-{{student}}</li>
+ </ul>
+
+ <table border="2"> 
+  <thead> 
+  <tr> 
+    <th>Name</th> 
+    <th>Country</th> 
+    <th>Age</th> 
+    <th>Runs</th> 
+    <th>Wicket</th> 
+  </tr> 
+</thead> 
+  <tr> 
+    <td *ngFor="let player of players">{{player.name}}</td>  
+    <td *ngFor="let player of players">{{player.age}}</td> 
+  </tr> 
+</table> 
+</ul> -->
+
+<!-- <button (click)="toggleDiv()">Hello</button>
+
+<div *ngIf="display" style="border: 2px solid black; padding: 10px; width: 300px;">
+  Hello Ajju Sir
+</div> -->
+
+<!-- ng class-->
+
+<!-- <div [ngClass]="{'bg-success':success, 'bg-danger':!success}">
+  some text inside div</div> -->
+
+<!-- <hr> 
+<div style="color: blue; background: #caf4ff;">
+Hello, Some text inside div
+</div>  -->
+<!-- 
+<div [ngSwitch]="conditionExpression">
+  <div *ngSwitchCase="'admin'">Welcome Admin</div>
+  <div *ngSwitchCase="'user'">Welcome User</div>
+  <div *ngSwitchDefault>Welcome Guest</div>
+</div> -->
+
+<div appCustom [customColor]="'blue'"> 
+  Custom directive 
+</div>

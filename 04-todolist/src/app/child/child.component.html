@@ -1,0 +1,10 @@
+<div class="pending-tasks">
+    <h2>Pending Tasks</h2>
+    <ul>
+      <li *ngFor="let todo of todos">
+        {{ todo.task }}
+        <button (click)="completeTask(todo.id)">Mark as Completed</button>
+      </li>
+    </ul>
+  </div>
+  

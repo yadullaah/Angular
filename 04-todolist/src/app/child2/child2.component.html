@@ -1,0 +1,10 @@
+<div class="completed-tasks">
+    <h2>Completed Tasks</h2>
+    <ul>
+      <li *ngFor="let todo of completedTodos">
+        {{ todo.task }}
+        <button (click)="deleteTask(todo.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  

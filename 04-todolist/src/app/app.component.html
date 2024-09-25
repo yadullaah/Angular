@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Todo List</h1>
+  
+  <app-todo-box
+    [todos]="todos.filter(todo => !todo.completed)"
+    (onComplete)="markAsCompleted($event)">
+  </app-todo-box>
+  
+  <app-completed-box
+    [completedTodos]="todos.filter(todo => todo.completed)"
+    (onDelete)="deleteTodo($event)">
+  </app-completed-box>
+</div>

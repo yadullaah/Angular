@@ -1,0 +1,55 @@
+<!-- <button type ="button" class = " btn btn-outline-primary ">Submit</button>
+<button type ="button" class = " btn btn-outline-secondary ">Submit</button>
+<button type ="button" class = " btn btn-outline-danger ">Submit</button>
+<button type ="button" class = " btn btn-outline-success ">Submit</button>
+<button type ="button" class = " btn btn-outline-info ">Submit</button>
+<button type ="button" class = " btn btn-outline-warning ">Submit</button>
+<button type ="button" class = " btn btn-outline-light ">Submit</button>
+<button type ="button" class = " btn btn-outline-dark ">Submit</button>
+<button type ="button" class = " btn btn-outline-link ">Submit</button>
+
+<button type ="button" class = " btn btn-primary ">Submit</button>
+<button type ="button" class = " btn btn-secondary ">Submit</button>
+<button type ="button" class = " btn btn-danger ">Submit</button>
+<button type ="button" class = " btn btn-success ">Submit</button>
+<button type ="button" class = " btn btn-info ">Submit</button>
+<button type ="button" class = " btn btn-warning ">Submit</button>
+<button type ="button" class = " btn btn-light ">Submit</button>
+<button type ="button" class = " btn btn-dark ">Submit</button>
+<button type ="button" class = " btn btn-link ">Submit</button> -->
+
+<!-- 1. Interppolation -->
+<!-- <h1>welcome {{user | json}}</h1> -->
+<!-- <h1>welcome {{getUserName()}}</h1> -->
+
+<!-- 2. Property binding-->
+
+<!-- <a href="https://www.google.co.in/"></a>
+<a [href] = "link">link to Google</a>
+<br>
+<br>
+<img [src]="imglink" [width]="imageWidth" [height]="imageHeight" alt="">
+
+<button type = "button" [disabled] = "disbaled" class="btn btn-primary">Submit</button> -->
+
+<!-- 2. event binding-->
+<!-- 
+<button (click)="showAlert()" type="button" class="btn btn-danger"> Alert</button> -->
+
+<!-- localreference -->
+<!-- <input type = "text" #box>
+<button (click) = "addText(box.value)" type="button" class="btn btn-success">Add</button>
+<div>{{value}}</div> -->
+
+<!-- <input type = "text" #box1 (keydown.enter)="onAddText(box1)">
+<div>{{value}}</div>  -->
+
+<!-- <div>
+    <button (click)="increment()" class="btn btn-success">Increment</button>
+    <button (click)="decrement()"class="btn btn-danger">Decrement</button>
+    <button (click)="reset()" class="btn btn-primary">Reset</button>
+    <div>{{number}}</div>
+</div> -->
+
+<input type = "text" #box>
+<button (click) = "addNewText()" type="button" class="btn btn-success">Add</button>

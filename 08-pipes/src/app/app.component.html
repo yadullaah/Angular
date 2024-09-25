@@ -1,0 +1,15 @@
+<h1>Built-in Pipes Example</h1> 
+ 
+<p>Original: {{ name }}</p> 
+<p>Uppercase: {{ name | uppercase }}</p> 
+ 
+<p>Today's Date: {{ today | date }}</p> 
+<p>Formatted Date: {{ today | date: 'fullDate' }}</p> 
+ 
+<p>Currency: {{ price | currency: 'INR' }}</p> 
+ 
+ 
+<h1>Custom Pipe Example</h1> 
+ 
+<p>Original: {{ phrase }}</p> 
+<p>Snake Case: {{ phrase | snakecase }}</p>
